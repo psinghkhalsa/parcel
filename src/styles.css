@@ -1,18 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-  text-align: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #085343a6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-h1 {
-  color: hotpink;
-  font-family: cursive;
-  font-size: 55px;
+.container {
+    width: 300px;
+    height: 350px;
+    position: relative;
 }
 
-p {
-  font-family: Helvetica, Arial, sans-serif;
-  line-height: 1.5em;
+.container img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    
 }
 
-a {
-  color: dodgerblue;
+.container:hover img:nth-child(1) {
+    transform: translate(350px,.01px);
+}
+
+.container:hover img:nth-child(2) {
+    transform: translate(.01px,400px);
+}
+
+.container:hover img:nth-child(3) {
+    transform: translate(-350px,.01px);
+}
+
+.container:hover img:nth-child(4) {
+    transform: translate(.01px,-400px);
 }
