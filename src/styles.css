@@ -25,21 +25,37 @@ body {
     position: absolute;
     cursor: pointer;
     transition: 0.5s ease-in-out;
-    
+    border: ridge 20px rgb(107, 78, 78);
 }
 
 .container:hover img:nth-child(1) {
-    transform: translate(350px,.01px);
+    transform: translate(350px, .01px);
 }
 
 .container:hover img:nth-child(2) {
-    transform: translate(.01px,400px);
+    transform: translate(.01px, 400px);
 }
 
 .container:hover img:nth-child(3) {
-    transform: translate(-350px,.01px);
+    transform: translate(-350px, .01px);
 }
 
 .container:hover img:nth-child(4) {
-    transform: translate(.01px,-400px);
+    transform: translate(.01px, -400px);
+}
+
+.container:hover img:nth-child(5) {
+    transform: translate(350px, -400px);
+}
+
+.container:hover img:nth-child(6) {
+    transform: translate(-350px, 400px);
+}
+
+.container:hover img:nth-child(7) {
+    transform: translate(350px, 400px);
+}
+
+.container:hover img:nth-child(8) {
+    transform: translate(-350px, -400px);
 }
